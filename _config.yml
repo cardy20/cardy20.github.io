@@ -6,11 +6,7 @@
 name: Cardy's blog
 
 # Short bio or description (displayed in the header)
-<<<<<<< HEAD
-description: Carpediem! 
-=======
 description: Carpediem!
->>>>>>> 8786e7f4b122e8bae173848e1cd40c8c26559a18
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/logo.png
@@ -43,7 +39,7 @@ disqus:
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Your websiIsolationForestblogte URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
 url:
 
