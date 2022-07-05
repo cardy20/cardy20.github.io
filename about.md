@@ -1,12 +1,10 @@
 ---
 layout: page
-title: About
+title: cardy20
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
+### About me
 
 I'm working to build machines that understand humans and world through language.
 My research interests lie in the area of natural language processing and machine learning.
