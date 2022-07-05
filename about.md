@@ -1,6 +1,6 @@
 ---
 layout: page
-title: cardy20
+title: Hello, World.
 permalink: /about/
 ---
 
