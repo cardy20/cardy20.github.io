@@ -3,7 +3,7 @@ layout: post
 title: Dacon 대회 실험 공유
 subtitle: 반도체 박막 두께 예측 알고리즘
 bigimg: /img/path.jpg
-category: Project
+category: Projects
 tags: [deeplearning, mlp]
 ---
 

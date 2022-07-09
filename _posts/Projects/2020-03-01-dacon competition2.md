@@ -3,7 +3,7 @@ layout: post
 title: Dacon 대회 실험 공유2
 subtitle: 천체 분류 알고리즘
 # bigimg: /img/path.jpg
-category: Project
+category: Projects
 tags: [deeplearning, classification]
 ---
 
