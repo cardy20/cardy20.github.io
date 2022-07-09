@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Projects
-permalink: /project/
+title: Archive
+permalink: /archive/
 ---
 <article>
 
