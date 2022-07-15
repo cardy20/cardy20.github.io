@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Project] (Dacon) 천체 분류 알고리즘 실험 공유
+title: (Dacon) 천체 분류 알고리즘 실험 공유
 subtitle: 천체 분류 알고리즘
 # bigimg: /img/path.jpg
 category: Projects
