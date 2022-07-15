@@ -2,7 +2,7 @@
 layout: post
 title: [논문 리뷰] Attention is All You Need
 subtitle: Attention is all you need 논문 이해 및 내용 정리
-category: Posts
+category: Paper Review
 tags: [deeplearning, NLP]
 ---
 
