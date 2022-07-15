@@ -6,8 +6,6 @@ category: Paper Review
 tags: [deeplearning, NLP]
 ---
 
-# Attention Is All You Need
-
 "Transformer 논문 핵심 리뷰"
 
 ## Introduction
