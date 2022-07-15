@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dacon 대회 실험 공유2
+title: [Project] (Dacon) 천체 분류 알고리즘 실험 공유
 subtitle: 천체 분류 알고리즘
 # bigimg: /img/path.jpg
 category: Projects
 tags: [deeplearning, classification]
 ---
 
-처음 대회의 데이터로만 봤을 때, 딥러닝으로 문제를 해결해보고 싶었다.
+"Multi perceptron layers 으로 문제를 해결해보고 싶었다."
 
 ## 요약
 

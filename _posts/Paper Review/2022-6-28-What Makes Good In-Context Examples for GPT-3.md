@@ -1,10 +1,15 @@
 ---
 layout: post
-title: What Make Good In-Context Examples for GPT-3?
+title: [논문 리뷰] What Make Good In-Context Examples for GPT-3?
+subtitle: In-context learning 이해하기.
 categories: Paper Review
 ---
 
 <!-- ![_config.yml]({{ site.baseurl }}./images/logo.png) -->
+
+# What Make Good In-Context Examples for GPT-3?
+
+"In-context learning series : 논문 리뷰 "
 
 ### 1. 서론
 

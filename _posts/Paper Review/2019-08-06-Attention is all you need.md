@@ -1,16 +1,16 @@
 ---
 layout: post
-title: 논문 리뷰 - language model
+title: [논문 리뷰] Attention is All You Need
 subtitle: Attention is all you need 논문 이해 및 내용 정리
 bigimg: /img/path.jpg
-category: Research
+category: Paper Review
 tags: [deeplearning, NLP]
 ---
 
 # Attention Is All You Need
 
-- 본 내용은 2019.8.6에 논문을 읽고 내용을 정리해서 사내에 공유한 것입니다. 
-- 보시고 부족한 부분이나 더 토론이 필요한 부분은 메일을 주시면 감사하겠습니다. (곧... 게시판 기능을 도입하겠습니다!)
+"Transformer 논문 핵심 리뷰"
+
 ## Introduction
 
 sequence modeling, LM, NMT 문제를 해결하기 위해 RNN기술(GLU),encoder-decoder 구조로 향하고 있음. [38,24,15]
@@ -64,24 +64,30 @@ K : matrix of keys
 
 V : matrix of values
 
-<img src="20190806/Attention is all you need0.png" width=500px />
 
-<img src="20190806/Attention is all you need1.png" width=43px />
+![]({{site.url}}/images/20190806/Attention is all you need0.png)
+![]({{site.url}}/images/20190806/Attention is all you need1.png)
+<!-- <img src="20190806/Attention is all you need0.png" width=500px />
+
+<img src="20190806/Attention is all you need1.png" width=43px /> -->
 
 mapping _a query and a set of key-value pairs_ to an _output_ . output is computed as a weighted sum of the values( __where the weight assigned to each value is computed by a compatibility function of the query with the corresponding key.__ )
 
 ## 3. Model Architecture
 3.2.1 Scaled Dot-Product & Multi-head attention
 
-<img src="20190806/Attention is all you need2.png" width=500px />
+![]({{site.url}}/images/20190806/Attention is all you need2.png)
+![]({{site.url}}/images/20190806/Attention is all you need3.png)
 
-<img src="20190806/Attention is all you need3.png" width=445px />
+<!-- <img src="20190806/Attention is all you need2.png" width=500px />
+<img src="20190806/Attention is all you need3.png" width=445px /> -->
 
 # Multihead Attention
 3.2.2 Multi-Head Attention
 weighted sum 극복을 위한 convolution 방식(different linear transformation)의 multi-head attention
 
-<img src="20190806/Attention is all you need4.png" width=500px />
+![]({{site.url}}/images/20190806/Attention is all you need4.png)
+<!-- <img src="20190806/Attention is all you need4.png" width=500px /> -->
 
 single attention을 d(model)크기의 keys, values and queries에 적용하기 보다,
 
@@ -95,7 +101,8 @@ concatenated 하고 한번 더 linear projected => final values.
 
 *d(model) :embedding layer output of dimension.
 
-<img src="20190806/Attention is all you need5.png" width=500px />
+![]({{site.url}}/images/20190806/Attention is all you need5.png)
+<!-- <img src="20190806/Attention is all you need5.png" width=500px /> -->
 
 ## Transformer
 
@@ -122,7 +129,8 @@ decoder의 경우, decoder input에 self-attention layers 통해, 모든 positio
 ## 3. Model Architecture
 3.3 Position-Wise Feed Forward Networks
 
-<img src="20190806/Attention is all you need6.png" width=332px />
+![]({{site.url}}/images/20190806/Attention is all you need6.png)
+<!-- <img src="20190806/Attention is all you need6.png" width=332px /> -->
 
 encoder와 decoder에 있는 각 layer들은 fnn을 적용한다.
 
@@ -130,7 +138,8 @@ each position에 개별적으로 또 동등하게 적용, 위의 식으로 적�
 
 linear transformation을 다른 position마다 적용, layer마다는 다른 parameter사용.
 
-<img src="20190806/Attention is all you need7.png" width=500px />
+![]({{site.url}}/images/20190806/Attention is all you need7.png)
+<!-- <img src="20190806/Attention is all you need7.png" width=500px /> -->
 
 ## 3. Model Architecture
 3.4 Embedding and Softmax
@@ -150,7 +159,8 @@ decoder 결과를 predicted next-token probabilities로 바꾸기위해, linear 
 
 <span style="color:#434343">다른 주기를 활용해서 sine, cosine function 사용.</span>
 
-<img src="20190806/Attention is all you need8.png" width=500px />
+![]({{site.url}}/images/20190806/Attention is all you need8.png)
+<!-- <img src="20190806/Attention is all you need8.png" width=500px /> -->
 
 d model : dimension of model
 
@@ -171,7 +181,8 @@ layer마다의 계산 복잡도, 계산량(최소 필요한 연속 개수),long-
 
 Maximum path len : 두 position간의 의존성 학습을 위한 connection 개수
 
-<img src="20190806/Attention is all you need9.png" width=500px />
+![]({{site.url}}/images/20190806/Attention is all you need9.png)
+<!-- <img src="20190806/Attention is all you need9.png" width=500px /> -->
 
 ## 5. Training
 학습과정에서의 특수성
@@ -198,7 +209,8 @@ number of attention heads 실험, attention key와 value dimension 크기를 바
 
 single head attention 0.9 BLEU 하락, attention이 너무 많아도 BELU 하락.
 
-<img src="20190806/Attention is all you need10.png" width=500px />
+![]({{site.url}}/images/20190806/Attention is all you need10.png)
+<!-- <img src="20190806/Attention is all you need10.png" width=500px /> -->
 
 ## 7. Conclusion
 
@@ -210,9 +222,11 @@ sequence transduction model을 처음으로 recurrent layer를 attention으로 �
 
 ## 부록
 
-<img src="20190806/Attention is all you need11.png" width=500px />
+![]({{site.url}}/images/20190806/Attention is all you need11.png)
+![]({{site.url}}/images/20190806/Attention is all you need12.png)
 
-<img src="20190806/Attention is all you need12.png" width=500px />
+<!-- <img src="20190806/Attention is all you need11.png" width=500px /> -->
+<!-- <img src="20190806/Attention is all you need12.png" width=500px /> -->
 
 attention head 개수와 structure of sentence와의 관계를 설명함.
 
@@ -221,12 +235,13 @@ head의 개수가 많을수록, 다른 task를 학습하는 것으로 보인다�
 ## 부록
 Transformer와 Seq2seq with attention 차이
 
-<img src="20190806/Attention is all you need13.gif" width=500px />
+![]({{site.url}}/images/20190806/Attention is all you need13.png)
+![]({{site.url}}/images/20190806/Attention is all you need14.png)
 
-<img src="20190806/Attention is all you need14.gif" width=500px />
+<!-- <img src="20190806/Attention is all you need13.gif" width=500px />
+<img src="20190806/Attention is all you need14.gif" width=500px /> -->
 
 Seq to seq with attention encoder-decoder
-
 Transformer encoder-decoder
 
 ## 부록
@@ -239,11 +254,13 @@ Transformer encoder-decoder
 
 <span style="color:#222222">(x,y,0) is an orthogonal projection onto the</span>  <span style="color:#222222"> _x_ </span>  <span style="color:#222222">–</span>  <span style="color:#222222"> _y_ </span>  <span style="color:#222222">plane. This function is represented by the</span>  <span style="color:#0B0080">matrix</span>
 
-<img src="20190806/Attention is all you need15.png" width=252px />
+![]({{site.url}}/images/20190806/Attention is all you need15.png)
+![]({{site.url}}/images/20190806/Attention is all you need16.png)
+![]({{site.url}}/images/20190806/Attention is all you need17.png)
 
+<!-- <img src="20190806/Attention is all you need15.png" width=252px />
 <img src="20190806/Attention is all you need16.png" width=157px />
-
-<img src="20190806/Attention is all you need17.png" width=160px />
+<img src="20190806/Attention is all you need17.png" width=160px /> -->
 
 _https://en.wikipedia.org/wiki/Projection_(linear_algebra)#Projection_matrix_
 
