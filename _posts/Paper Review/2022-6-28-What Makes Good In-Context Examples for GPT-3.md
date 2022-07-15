@@ -7,8 +7,6 @@ categories: Paper Review
 
 <!-- ![_config.yml]({{ site.baseurl }}./images/logo.png) -->
 
-# What Make Good In-Context Examples for GPT-3?
-
 "In-context learning series : 논문 리뷰 "
 
 ### 1. 서론
