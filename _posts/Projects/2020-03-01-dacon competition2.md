@@ -7,7 +7,7 @@ category: Projects
 tags: [deeplearning, classification]
 ---
 
-"Multi perceptron layers 으로 문제를 해결해보고 싶었다."
+" 연속형 데이터, 분류, MLP "
 
 ## 요약
 

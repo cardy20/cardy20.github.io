@@ -7,6 +7,7 @@ category: Projects
 tags: [deeplearning, mlp]
 ---
 
+" 연속형 데이터, 회귀분석, MLP with skip connection"
 
 ## 데이터 설명
 
