@@ -14,7 +14,6 @@ tags: [deeplearning, mlp]
 layer 1-4 : 박막의 두께
 0 ~ 255 : 반사율 스펙트럼, 빛의 파장 등이 비식별화 된 데이터
 박막의 두께에 영향을 미칠 수 있는 반사율 스펙트럼이나 빛의 파장 식별 수치들
-
 데이터에 영향을 미칠 수 있는 변수들을 추려 데이터를 만든 과정은 dacon에서 추가로 정보를 공유해주셨습니다.
 https://dacon.io/competitions/official/235554/talkboard/400310
 
